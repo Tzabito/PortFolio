@@ -1,0 +1,280 @@
+<header id="home">
+  <a class="">Miguel A.</a>
+
+  <nav class="navs-list" id="nav-menu">
+    <a href="#home">{{ 'Home' | translate }}</a>
+    <a href="#skills">{{ 'Skills' | translate }}</a>
+    <a href="#projects">{{ 'Projects' | translate }}</a>
+    <a href="#contact">{{ 'Contact' | translate }}</a>
+  </nav>
+
+  <div class="language-switch">
+    <span class="language-text" id="english-text">{{ 'English' | translate }}</span>
+    <label class="switch">
+      <input
+        type="checkbox"
+        id="language-toggle"
+        [checked]="isSpanish"
+        (change)="switchLanguage(languageToggle.checked)"
+        #languageToggle
+      />
+      <span class="slider"></span>
+    </label>
+    <span class="language-text" id="spanish-text">{{ 'Spanish' | translate }}</span>
+  </div>
+
+</header>
+
+<section class="home-page">
+
+  <div class="about-section">
+    <div class="info-text-1">
+      <h2>{{ 'Software' | translate }}</h2>
+      <h3>[{{ 'Student' | translate }}]</h3>
+      <h1>Miguel Ramirez</h1>
+    </div>
+
+    <div class="about-me">
+      <h3>{{ 'About' | translate }}</h3>
+
+      <div class="info-me">
+        <div class="vertical-line"></div>
+        <p>
+          {{ 'I am' | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-me">
+    <div class="image">
+      <img src="images/me.png" alt="image-personal">
+      <div class="horizontal-line"></div>
+    </div>
+
+    <div class="info-cv">
+
+      <div class="image-block">
+        <a class="image-cv" href="images/Miguel_Angel_Ramirez_Alfaro_CV.pdf" download="Miguel_Ramirez_CV.pdf">
+          <mat-icon id="icon" style="color: #FFFFFF">cloud_download</mat-icon>
+          <h2>CV</h2>
+        </a>
+      </div>
+
+      <a class="image-block" href="https://www.linkedin.com/in/miguel-angel-ramirez-alfaro-77b9a1256" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn Profile" style="width: 50px; height: 50px;">
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<hr>
+
+<section class="skills-page" id="skills">
+
+  <div class="skills">
+    <h1>{{ 'My Skills' | translate }}</h1>
+
+    <h2>Front-End</h2>
+
+    <div class="cards">
+      <div class="card">
+        <a>{{ 'Intermediate' | translate }}</a>
+        <img src="images/html.webp" alt="image_html">
+        <h2>HTML</h2>
+      </div>
+
+      <div class="card">
+        <a style="margin-bottom: 10px">{{ 'Intermediate' | translate }}</a>
+        <img src="images/css.svg" alt="image_html" style="width: 90%; height: 90%;">
+        <h2 style="padding-top: 0; margin-top: 0">CSS</h2>
+      </div>
+
+      <div class="card">
+        <a style="margin-bottom: -5px; background-color: #14AE5C">{{ 'Basic' | translate }}</a>
+        <img src="images/JS.webp" alt="image_html" style="width: 100%; height: 100%; margin: 0">
+        <h2 style="padding-top: 0; margin-top: 0">JS</h2>
+      </div>
+
+      <div class="card">
+        <a style="margin-bottom: 0;">{{ 'Intermediate' | translate }}</a>
+        <img src="images/Angular.png" alt="image_html" style="width: 100%; height: 100%; margin: 0">
+        <h2 style="padding-top: 0; margin-top: 0; font-size: 20px">AngularJs</h2>
+      </div>
+    </div>
+
+    <h2>Back-End</h2>
+
+    <div class="cards">
+      <div class="card">
+        <a>{{ 'Intermediate' | translate }}</a>
+        <img src="images/Java.png" alt="image_html">
+        <h2>JAVA</h2>
+      </div>
+
+      <div class="card">
+        <a style="margin-bottom: 20px">{{ 'Intermediate' | translate }}</a>
+        <img src="images/SQL.png" alt="image_html">
+        <h2 >SQL</h2>
+      </div>
+
+      <div class="card">
+        <a style="margin-bottom: -5px;">{{ 'Intermediate' | translate }}</a>
+        <img src="images/mysql.png" alt="image_html" style="width: 100%; height: 100%; margin: 0px">
+        <h2 style="padding-top: 0px; margin-top: 0px">MySQL</h2>
+      </div>
+
+      <div class="card">
+        <a style="margin-bottom: 25px;">{{ 'Intermediate' | translate }}</a>
+        <img src="images/springboot.png" alt="image_html">
+        <h2 style="font-size: 20px">SpringBoot</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="others">
+
+    <h2>Others</h2>
+
+    <div class="min-cards">
+      <div class="min-card">
+        <img src="images/github.png" alt="github_image" title="{{ 'Basic' | translate }}" >
+      </div>
+      <div class="min-card">
+        <img src="images/scrum.png" alt="github_image" title="{{ 'Intermediate' | translate }}">
+      </div>
+      <div class="min-card">
+        <img src="images/figma.webp" alt="github_image" title="{{ 'Basic' | translate }}">
+      </div>
+      <div class="min-card">
+        <img src="images/c++.svg" alt="github_image" title="{{ 'Intermediate' | translate }}">
+      </div>
+      <div class="min-card">
+        <img src="images/python.svg" alt="github_image" title="{{ 'Basic' | translate }}">
+      </div>
+      <div class="min-card">
+        <img src="images/trello.png" alt="github_image" title="{{ 'Intermediate' | translate }}">
+      </div>
+      <div class="min-card">
+        <img src="images/powerbi.png" alt="github_image" title="{{ 'Basic' | translate }}">
+      </div>
+      <div class="min-card">
+        <img src="images/excel.png" alt="github_image" title="{{ 'Intermediate' | translate }}">
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<hr>
+
+<section class="projects-page" id="projects">
+
+  <h1>{{ 'My Projects' | translate }}</h1>
+
+  <div class="projects-cards">
+
+    <div class="projects-card">
+
+      <a class="" href="https://techteam-fastgym.github.io/FastGym-LandingPage/" target="_blank">
+        <img src="images/fastgym-logo.png" style="border: 2px solid rgba(73, 69, 79, 0.9);" alt="Fast-Gym">
+      </a>
+
+      <p>
+        {{ 'Project 1' | translate }}
+      </p>
+
+      <div class="technologies-card">
+        <h3>{{ 'Technologies' | translate }}</h3>
+        <div class="icon-bar">
+          <img src="images/Angular.png" alt="Angular-image">
+          <img src="images/mysql.png" alt="Angular-image">
+          <img src="images/springboot.png" alt="Angular-image">
+          <img src="images/flutter.png" alt="Angular-image">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="projects-card">
+
+      <a class="" href="https://greentools-landing-page.netlify.app/" target="_blank">
+        <img src="images/greentools.png" alt="Fast-Gym" style="border: 2px solid rgba(73, 69, 79, 0.9);">
+      </a>
+
+      <p>
+        {{ 'Project 2' | translate }}
+      </p>
+
+      <div class="technologies-card">
+        <h3>{{ 'Technologies' | translate }}</h3>
+        <div class="icon-bar">
+          <img src="images/Angular.png" alt="Angular-image">
+          <img src="images/mysql.png" alt="Angular-image">
+          <img src="images/springboot.png" alt="Angular-image">
+          <img src="images/flutter.png" alt="Angular-image">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="projects-card">
+
+      <a class="" href="https://kartpro-landingpage.netlify.app/#" target="_blank">
+        <img src="images/kartpro.png" style="border: 2px solid rgba(73, 69, 79, 0.9);" alt="Fast-Gym">
+      </a>
+
+      <p>
+        {{ 'Project 3' | translate }}
+      </p>
+
+      <div class="technologies-card">
+        <h3>{{ 'Technologies' | translate }}</h3>
+        <div class="icon-bar">
+          <img src="images/Angular.png" alt="Angular-image">
+          <img src="images/mysql.png" alt="Angular-image">
+          <img src="images/wokwi.png" alt="Angular-image">
+          <img src="images/flutter.png" alt="Angular-image">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<hr>
+
+<section class="contact-page" id="contact">
+
+  <h1>{{ 'Contact Me' | translate }}</h1>
+
+  <div class="box-infos">
+    <div class="box-info">
+      <img src="images/WhatsApp.webp" alt="wsp-image">
+      <p>(+51) 913 862 963</p>
+    </div>
+    <div class="box-info">
+      <img src="images/email.png" alt="">
+      <p>miguel_anxel&#64;hotmail.com</p>
+    </div>
+    <div class="box-info">
+      <img src="images/location.png" alt="">
+      <p>Santiago de Surco, Lima</p>
+    </div>
+    <div class="box-info">
+      <img src="images/github.png" alt="ads">
+      <p>github.com/Tzabito</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&#64;Developed by Miguel R.- 2025</p>
+</footer>
+
